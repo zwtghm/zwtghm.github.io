@@ -35,8 +35,18 @@ $(document).ready(function(){
   $(".h_3").html(h_3);
   $(".fo_1").html(fo_1);
   console.log("%czwtghm的博客 📎 CC BY 4.0 .........版本1.2","color:#666;border-radius:100px;");
-  $("body").hide();
-  $("body").show(1200);
+  document.onreadystatechange=function () {
+    if (document.readyState=="complete"){
+        $(".showbox").fadeOut(1000);
+    }
+   }
+  $("body").append("<div class='showbox'>
+      <div class='loader'>
+        <svg class='circular' viewBox='25 25 50 50'>
+          <circle class='path' cx='50' cy='50' r='20' fill='none' stroke-width='2' stroke-miterlimit='10'/>
+        </svg>
+      </div>
+    </div>")
   var a_idx = 0;
   $("html").click(function(e) {
         var a = new Array("欢迎光临","🌮饼","zwtghm的博客","娇气","元气满满","hello","知足常乐");
