@@ -40,13 +40,6 @@ $(document).ready(function(){
         $(".showbox").fadeOut(1000);
     }
    }
-  $("body").append("<div class='showbox'>
-      <div class='loader'>
-        <svg class='circular' viewBox='25 25 50 50'>
-          <circle class='path' cx='50' cy='50' r='20' fill='none' stroke-width='2' stroke-miterlimit='10'/>
-        </svg>
-      </div>
-    </div>")
   var a_idx = 0;
   $("html").click(function(e) {
         var a = new Array("欢迎光临","🌮饼","zwtghm的博客","娇气","元气满满","hello","知足常乐");
