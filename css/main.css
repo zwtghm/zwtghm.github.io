@@ -140,7 +140,7 @@ p {
 }
 
 .a_2 {
-  color: white;
+  color: #333;
   font-size: 18px;
   font-weight: 500;
   display: block;
@@ -173,6 +173,7 @@ a {
 }
 
 .a_1 {
+  transition: all 0.4s;
   color: #333;
   border-radius: 100px;
   text-decoration: none;
