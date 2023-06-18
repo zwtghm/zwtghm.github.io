@@ -4,22 +4,13 @@ function m_1() {
 function top_1() {
   $('body,html').animate({ scrollTop: 0 }, 600);
 }
-function dark() {
-  $("p").css({"color":"white"})
-  $("a").css({"color":"white"})
-  $("body").css({"background-color":"#333","color":"white"});
-}
-function light() {
-  $("p").css({"color":"#333"})
-  $("a").css({"color":"#333"})
-  $("body").css({"background-color":"white","color":"#333"});
-}
+
 
 $(document).scroll(function () {
   var scroH = $(document).scrollTop();
   if (scroH > 10) {
     $("#top_1").css({ "opacity": "1" });
-    $("#h_1").css({ "box-shadow": "0 0 6px #333" });
+    $("#h_1").css({ "box-shadow": "0 0 6px #666" });
   } else {
     $("#top_1").css({ "opacity": "0" });
     $("#h_1").css({ "box-shadow": "none" });
@@ -44,7 +35,23 @@ $(document).ready(function () {
   $("head").append("<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900'>")
   $(".h_3").html(h_3);
   $(".fo_1").html(fo_1);
-  $("dark_1").toggle(dark(),light())
+  $("#dark_1").toggle(function () {
+    $(".a_1").hover(function () {
+      $(".a_1").css({ "color": "#0057e7" })
+    }, function () {
+        $(".a_1").css({ "color": "white" })
+      })
+    $(".a_1", "p", "a_2", "a_3").css({ "color": "white" })
+    $("body", ".h_1").css({ "background-color": "#333", "color": "white" });
+  }, function () {
+    $(".a_1").hover(function () {
+      $(".a_1").css({ "color": "#0057e7" })
+    }, function () {
+        $(".a_1").css({ "color": "#333" })
+      })
+    $(".a_1", "p", "a_2", "a_3").css({ "color": "white" })
+    $("body", ".h_1",".wzxx").css({ "background-color": "#333", "color": "white" });
+  })
   console.log("%czwtghm的博客 📎 CC BY 4.0 .........版本1.2", "color:#666;border-radius:100px;");
   document.onreadystatechange = function () {
     if (document.readyState == "complete") {
