@@ -79,33 +79,42 @@
 }
 
 #dark_1 {
-  color: black;
+  font-size: 18px;
+  color: white;
   border: none;
-  background: rgba(0, 0, 0, 0.08);
-  background-color: #0057e7;
+  background-color: #26f1ff;
   position: fixed;
-  bottom: 36px;
+  bottom: 70px;
   right: 20px;
+  height: 30px;
+  width: 30px;
+  line-height: 10px;
+  text-align: center;
   box-shadow: 0 0 2px;
-  border-radius: 100px;
+  border-radius: 100%;
   transition: all 0.5s;
-  opacity: 0;
-  padding: 6px;
+  line-height: 30px;
+  padding: 0;
 }
 
 #top_1 {
-  color: black;
+  font-size: 18px;
+  color: white;
   border: none;
-  background: rgba(0, 0, 0, 0.08);
   background-color: #0057e7;
   position: fixed;
   bottom: 30px;
   right: 20px;
+  height: 30px;
+  width: 30px;
+  line-height: 10px;
+  text-align: center;
   box-shadow: 0 0 2px;
-  border-radius: 100px;
+  border-radius: 100%;
   transition: all 0.5s;
   opacity: 0;
-  padding: 6px;
+  line-height: 30px;
+  padding: 0;
 }
 
 .wzxx_1 {
@@ -142,6 +151,8 @@ img {
 }
 
 body {
+  background-color: white;
+  color: #333;
   font-family: 'Noto Sans SC', 'STHeiti Light', 'Source Han Sans CN', 'SimHei', "Times New Roman", Georgia, Serif, SimHei;
 }
 

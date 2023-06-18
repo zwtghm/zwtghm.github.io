@@ -4,6 +4,16 @@ function m_1() {
 function top_1() {
   $('body,html').animate({ scrollTop: 0 }, 600);
 }
+function dark() {
+  $("p").css({"color":"white"})
+  $("a").css({"color":"white"})
+  $("body").css({"background-color":"#333","color":"white"});
+}
+function light() {
+  $("p").css({"color":"#333"})
+  $("a").css({"color":"#333"})
+  $("body").css({"background-color":"white","color":"#333"});
+}
 
 $(document).scroll(function () {
   var scroH = $(document).scrollTop();
@@ -34,6 +44,7 @@ $(document).ready(function () {
   $("head").append("<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900'>")
   $(".h_3").html(h_3);
   $(".fo_1").html(fo_1);
+  $("dark_1").toggle(dark(),light())
   console.log("%czwtghm的博客 📎 CC BY 4.0 .........版本1.2", "color:#666;border-radius:100px;");
   document.onreadystatechange = function () {
     if (document.readyState == "complete") {
