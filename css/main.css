@@ -1,7 +1,12 @@
-.ps_1{
-  color:#0057e7;
-  font-size:30px;
-  font-weight:600;
+.ps_1 {
+  color: #0057e7;
+  font-size: 30px;
+  font-weight: 600;
+}
+@keyframes fish{
+  0%   { transform:translate(0) }	
+  50%  { transform:translate(100%)}	
+  100% { transform:translate(0) }
 }
 
 .loader {
@@ -59,7 +64,8 @@
 }
 
 .showbox {
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
   z-index: 3;
   width: 100%;
   height: 100%;
@@ -78,11 +84,15 @@
   content: "📜";
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 #dark_1 {
   font-size: 18px;
   color: white;
   border: none;
-  background-color: #4bff81;
+  background-color: #e7c400;
   position: fixed;
   bottom: 70px;
   right: 20px;
@@ -127,8 +137,8 @@
 }
 
 code {
-  background-color: #333;
-  color: #666;
+  background-color: #555;
+  color: #777;
   padding: 8px;
   border-radius: 10px;
 }
@@ -139,7 +149,7 @@ img {
 }
 
 .ne_1 {
-  background-color:#0057e7;
+  background-color: #0057e7;
   width: 90%;
   margin: 0 auto;
   height: 100px;
@@ -151,6 +161,7 @@ img {
 }
 
 body {
+  scrollbar-width: none;
   background-color: white;
   color: #333;
   font-family: 'Noto Sans SC', 'STHeiti Light', 'Source Han Sans CN', 'SimHei', "Times New Roman", Georgia, Serif, SimHei;
@@ -206,8 +217,8 @@ a {
 }
 
 .a_1 {
-  transition: all 0.4s;
   color: #333;
+  transition: all 0.4s;
   border-radius: 100px;
   text-decoration: none;
 }
@@ -250,7 +261,8 @@ a {
   position: fixed;
   top: 0;
   transition: all 0.5s;
-  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 
 #h_1 {
@@ -261,7 +273,8 @@ a {
   height: 50px;
   box-shadow: none;
   transition: all 0.5s;
-  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 
 body {
@@ -276,11 +289,32 @@ body {
   text-align: center;
 }
 
-@media all and (orientation:landscape) {
-  .a_1:hover {
-    color: #0057e7;
-  }
+.off_1{
+  background: none;
+  border: none;
+}
 
+.alert_1{
+  padding: 4px;
+  box-shadow: 0 0 4px #555;
+  border-radius: 10px;
+  right: 3px;
+  max-width: 100px;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  color: #333;
+  top: 6px;
+}
+
+@media all and (orientation:landscape) {
+  .a_4:hover {
+    color: #0057e7 !important;
+  }
+  .a_4 {
+    display: inline;
+  }
+  
   #m_1 {
     display: none;
   }
@@ -299,9 +333,6 @@ body {
     backdrop-filter: none;
   }
 
-  .a_4 {
-    display: inline;
-  }
 
   .k_1 {
     display: none
