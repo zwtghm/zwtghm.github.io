@@ -53,7 +53,7 @@ $(document).ready(function () {
       "left": x,
       "position": "absolute",
       "font-weight": "bold",
-      "color": "#00afef"
+      "color": "#0057e7"
     });
     $("body").append($i);
     $i.animate({

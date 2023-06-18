@@ -108,7 +108,7 @@ img {
 }
 
 .ne_1 {
-  background-image: linear-gradient(90deg, #5EFCE8, #736EFE);
+  background-color:#0057e7;
   width: 90%;
   margin: 0 auto;
   height: 100px;
@@ -247,7 +247,7 @@ body {
 
 @media all and (orientation:landscape) {
   .a_1:hover {
-    color: #4dabf8;
+    color: #0057e7;
   }
 
   #m_1 {
