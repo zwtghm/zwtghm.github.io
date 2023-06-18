@@ -36,19 +36,9 @@ $(document).ready(function () {
   $(".h_3").html(h_3);
   $(".fo_1").html(fo_1);
   $("#dark_1").toggle(function () {
-    $(".a_1").hover(function () {
-      $(".a_1").css({ "color": "#0057e7" })
-    }, function () {
-        $(".a_1").css({ "color": "white" })
-      })
     $(".a_1", "p", "a_2", "a_3").css({ "color": "white" })
     $("body", ".h_1").css({ "background-color": "#333", "color": "white" });
   }, function () {
-    $(".a_1").hover(function () {
-      $(".a_1").css({ "color": "#0057e7" })
-    }, function () {
-        $(".a_1").css({ "color": "#333" })
-      })
     $(".a_1", "p", "a_2", "a_3").css({ "color": "white" })
     $("body", ".h_1",".wzxx").css({ "background-color": "#333", "color": "white" });
   })
