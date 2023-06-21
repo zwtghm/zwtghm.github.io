@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/main.js"></script>
+  <title>跳转</title>
+</head>
+
+<body>
+  <div class='showbox'>
+    <div class='loader'>
+      <svg class='circular' viewBox='25 25 50 50'>
+        <circle class='path' cx='50' cy='50' r='20' fill='none' stroke-width='2' stroke-miterlimit='10' />
+      </svg>
+    </div>
+  </div>
+  <header class="h_3"></header>
+  <br>
+  <br>
+  <div id="tz_1">您将要跳转到外部网站:</div>
+  <a id="tz">确定跳转</a>
+  <br>
+  <footer class="fo_1"></footer>
+</body>
+<script>
+  var url = window.location.href
+  const url_1 = new URL(url);
+  const searchParams = url_1.searchParams;
+  var linkto = searchParams.get("linkto");
+  $(document).ready(function () {
+    $("#tz_1").append(linkto)
+    $.ajax({
+     url: linkto,      
+     type: "GET",
+     success: function () {                     
+      $("#tz").attr("href",linkto) 
+      },
+     error: function (err) {
+      $("#zalt").append("<div class='alert_1' id='alt_3'>请求错误<button class='ybtn_1' onclick='off_alt(`alt_3`)'>❎</button></div>")
+      $("#tz").text("链接无法访问")
+          console.log(err); 
+      }
+   })
+   
+  }) 
+  console.log(linkto)
+</script>
+</html>
