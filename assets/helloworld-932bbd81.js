@@ -1,1 +1,0 @@
-import{o as t,c as a,a as e,t as o,b as s}from"./index-4cf871d4.js";const r={class:"msg_1"},l=e("div",{class:"msg_2"},[s("helloworld!"),e("br"),s("huifyjdrthsrghsteraserfae")],-1),c="helloworld",h={__name:"helloworld",setup(_){return(i,d)=>(t(),a("div",r,[e("div",{class:"title_1"},[e("a",{class:"a_3",href:"javascript:location.reload"},o(c))]),l]))}};export{h as default};
