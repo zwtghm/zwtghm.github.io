@@ -1,1 +1,0 @@
-import{d as t,c as e,t as o,u as a,o as s,k as n}from"./index-K9pyCePC.js";const c={class:"rposts"},u=t({__name:"about",setup(r){return document.title="关于",(_,i)=>(s(),e("div",c,o(a(n).about),1))}});export{u as default};
