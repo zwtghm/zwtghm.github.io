@@ -1,0 +1,1 @@
+import{_ as t}from"./_plugin-vue_export-helper.x3n3nnut.js";import{o,c as r,b as s,j as a}from"./entry.45KnjWs2.js";const c={},n={class:"tracking-wide mt-2 dark:text-gray-100 text-gray-900 mb-2"};function _(e,d){return o(),r("div",null,[s("p",n,[a(e.$slots,"default")])])}const i=t(c,[["render",_]]);export{i as _};
